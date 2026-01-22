@@ -33,7 +33,7 @@ sa-token:
 # magic-api
 magic-api:
   # 配置web页面入口
-  web: /api/web
+  web: /magic-api/web
   # 配置文件存储位置
   resource:
     type: database # 配置存储在数据库中
@@ -42,7 +42,7 @@ magic-api:
     prefix: /tansci-api # key前缀
     readonly: false # 是否是只读模式
 #    location: data/magic-api #存储路径
-  prefix: / # 接口前缀，可以不配置
+  prefix: /magic-api/ # 接口前缀，改为/magic-api/以避免与/api冲突
   show-sql: true # 配置打印SQL
   sql-column-case: camel # 启用驼峰命名转换
   cache:
