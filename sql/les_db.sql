@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 80041 (8.0.41)
  Source Host           : localhost:3306
- Source Schema         : tansci_boot
+ Source Schema         : les_db
 
  Target Server Type    : MySQL
  Target Server Version : 80041 (8.0.41)

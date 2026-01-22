@@ -31,3 +31,20 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Frontend build outputs & node modules
+node_modules/
+dist/
+
+# tansci frontends
+tansci-boot-ui/node_modules/
+tansci-boot-ui/dist/
+
+# editor frontend
+tansci-boot-ui-editor/node_modules/
+tansci-boot-ui-editor/dist/
+tansci-boot-ui-editor/gh-pages/
+
+# logs
+*.log
+.DS_Store

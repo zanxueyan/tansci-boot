@@ -1,1 +1,1 @@
-window.common={API_QUERY_URL:"http://localhost:7000/tansci/lcPages/get/",API_SAVE_URL:"http://localhost:7000/tansci/lcPages/update",TOKEN_KEY:"token"};
+window.common={API_QUERY_URL:"http://localhost:7000/tansci/lowcode/lcPages/get/",API_SAVE_URL:"http://localhost:7000/tansci/lowcode/lcPages/update",TOKEN_KEY:"token"};
