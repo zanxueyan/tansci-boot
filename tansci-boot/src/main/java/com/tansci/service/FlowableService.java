@@ -12,6 +12,7 @@ import org.flowable.engine.runtime.ProcessInstance;
 import org.flowable.engine.task.Comment;
 import org.flowable.task.api.Task;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -27,6 +28,7 @@ import java.util.Map;
  **/
 @Slf4j
 @Service
+@ConditionalOnProperty(prefix = "flowable", name = "enabled", havingValue = "true", matchIfMissing = false)
 public class FlowableService {
 
     @Autowired

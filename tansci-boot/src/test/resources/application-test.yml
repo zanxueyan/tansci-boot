@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=MySQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+flowable:
+  database-schema-update: false
+  database-type: h2
+  app:
+    enabled: false
+  process:
+    enabled: false
+  enabled: false
+  idm:
+    enabled: false
+
+spring:
+  autoconfigure:
+    exclude:
+      - org.flowable.spring.boot.ProcessEngineAutoConfiguration
+      - org.flowable.spring.boot.idm.IdmEngineAutoConfiguration
+      - org.flowable.spring.boot.IdmEngineAutoConfiguration
+      - org.flowable.spring.boot.AppEngineAutoConfiguration
+      - org.flowable.spring.boot.process.ProcessEngineServicesAutoConfiguration
+      - org.flowable.spring.boot.idm.IdmEngineServicesAutoConfiguration
+      - org.flowable.spring.boot.IdmEngineServicesAutoConfiguration
+      - org.flowable.spring.boot.app.AppEngineServicesAutoConfiguration

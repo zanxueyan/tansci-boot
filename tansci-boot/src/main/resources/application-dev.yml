@@ -17,3 +17,10 @@ spring:
     testOnReturn: false
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
+
+# Flowable配置
+flowable:
+  # 关闭定时器
+  async-executor-activate: false
+  # 不自动创建/更新数据库表
+  database-schema-update: false
